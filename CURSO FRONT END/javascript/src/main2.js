@@ -32,6 +32,7 @@ if (idade >= 0 && idade < 15) {
 */
 
 
+/*
 
 // logiga de média de notas
 
@@ -80,4 +81,22 @@ if(media >= 7 && faltas <= 20){
 }
 
 
+*/
 
+
+function calcularAreaTerreno (largura, comprimento){
+
+    // logica da função
+    
+    var area = largura * comprimento
+
+    return area 
+
+}
+
+var largura = prompt('Digite a largura do terreno em metros')
+var comprimento = prompt('Digite o comprimento do terreno em metros')
+
+var area = calcularAreaTerreno (largura, comprimento)
+
+alert('O terreno possui ' + area + ' metros quadrados.')
