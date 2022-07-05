@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curso FrontEnd</title>
+    <script>
+
+        // ESCOPOS DE VARIAVEIS
+
+        // 3 ESCOPOS: GLOBAL, FUNÇÃO E BLOCO
+
+        //GLOBAL
+
+        var series = 'dark'
+
+        // ESCOPO DE BLOCO
+
+        // variaveis de funçoes recebem variaveis globais e variaveis globais 
+
+        if (true){
+
+            var series2 = 'peaky blinders'
+
+            document.write(series)
+            document.write('<br/>')
+            document.write(series2)
+
+        }
+
+        document.write('<br/>')
+        document.write(series)
+        document.write('<br/>')
+        document.write(series2)
+
+        //VARIAVEIS DE FUNÇÃO
+
+        function x(){
+
+            var series3 = 'stranger thing'
+            
+            return series3
+
+
+        }
+
+        X()
+
+
+        document.write(series3) // variaveis globais não recebem as variaveis de função.
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>

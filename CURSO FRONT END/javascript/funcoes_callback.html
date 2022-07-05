@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curso FrontEnd</title>
+    <script>
+
+        function exibirArtigo(id, callbackSucesso, callbackError){
+
+            if(true){
+
+                callbackSucesso('Teste de callback em js', 'examplo de callback utilizando javascript')
+
+            }else
+
+                callbackError('Erro de recuperação de dados.')
+        }
+
+
+        var callbackSucesso = function(titulo, descricao){
+
+            document.write('<h1>' + titulo + '</h1>')
+            document.write('<hr />')
+            document.write('<p>' + descricao + '</p>')
+
+        }
+
+        var callbackError = function(erro){
+
+            document.write('<b>' + erro + '</b>')
+
+        }    
+
+        exibirArtigo(1, callbackSucesso, callbackError)
+
+    </script>
+</head>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>
